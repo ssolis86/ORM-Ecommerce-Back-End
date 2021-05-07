@@ -75,7 +75,7 @@ router.delete('/:id', (req, res) => {
   // delete on tag by its `id` value
   Tag.destroy({
     where: {
-      tag_id: req.params.tag_id,
+      id: req.params.id,
     },
   })
     .then((deletedTag) => {
